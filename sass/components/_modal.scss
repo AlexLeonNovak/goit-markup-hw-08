@@ -1,0 +1,67 @@
+.backdrop {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  transition: opacity 250ms getColor('cubic');
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(.8);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 530px;
+  min-height: 580px;
+
+  background-color: getColor(white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12),
+  0 1px 1px rgba(0, 0, 0, .14),
+  0 2px 1px rgba(0, 0, 0, .2);
+  border-radius: 4px;
+
+  transition: transform 250ms $cubic;
+}
+.modal-close {
+  display: flex;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: transparent;
+  border: 1px solid getColor(light-grey-icons);
+  cursor: pointer;
+  color: #000;
+
+  transition: color 250ms $cubic,
+  background-color 250ms $cubic;
+
+  &:hover, &:focus {
+    color: getColor(white);
+    background-color: getColor(blue);
+  }
+}
+
+.icon-close {
+  margin: auto;
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+}

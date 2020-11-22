@@ -1,0 +1,165 @@
+.btn-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  font-size: 16px;
+  line-height: 11.25;
+  letter-spacing: 0.03em;
+}
+.subscribe-form .input {
+  width: 360px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: transparent;
+  color: getColor(white);
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscribe-btn {
+  padding: 13px 28px;
+  height: 50px;
+
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.input {
+  transition: border 250ms $cubic;
+
+  &:focus {
+    border-color: getColor(blue);
+    border-radius: 4px;
+  }
+}
+
+.modal-body {
+  padding: 40px;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.input-icon-block {
+  position: relative;
+}
+.field-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: getColor('grey');
+  margin-bottom: 4px;
+}
+.field-input {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 11px 12px 30px;
+  height: 40px;
+  width: 100%;
+
+  &:focus {
+    border-color: getColor(blue);
+  }
+  &:focus + .field-icon {
+    fill: getColor(blue);
+  }
+}
+
+.field-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.field-textarea{
+  width: 100%;
+  resize: none;
+  height: 120px;
+  padding: 16px 12px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.field-agree {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.field-checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:checked + .check_box {
+    background: url("../images/icon_check.svg");
+    border: none;
+  }
+  &:focus + .check_box {
+    border-color: getColor(blue);
+  }
+  &:focus:checked + .check_box {
+    border: 2px solid getColor(black);
+    background-origin: border-box;
+  }
+}
+.check_box {
+  width: 16px;
+  height: 15px;
+  border: 2px solid getColor(black);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.field-agree .field-label {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.link-agree {
+  color: getColor(blue);
+  text-decoration: underline;
+
+  &:hover, &:focus {
+    color: getColor(black);
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.btn-offer {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+  border: 1px solid getColor(blue);
+}

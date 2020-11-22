@@ -1,0 +1,20 @@
+.client-item{
+  width: calc(100% / 6 - 30px);
+
+  &-link {
+    border: 1px solid getColor(light-grey-icons);
+    border-radius: 4px;
+    display: flex;
+    height: 90px;
+    padding: 20px 0;
+    color: getColor(light-grey-icons);
+
+    &:hover, &:focus {
+      border-color: getColor(blue);
+    }
+  }
+}
+
+.client-icon {
+  fill: currentColor;
+}

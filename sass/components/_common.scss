@@ -1,0 +1,102 @@
+:focus {
+    outline: transparent;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    line-height: 1.14;
+
+	color: getColor(black);
+	background-color: getColor(white);
+}
+p {
+	color: getColor(grey);
+    margin: 0;
+}
+h1, h2, h3, p {
+    padding-top: 0;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.flexbox {
+    display: flex;
+    align-items: center;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.grid-item {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 250ms $cubic,
+        background-color 250ms $cubic,
+        border 250ms $cubic;
+}
+.link:hover,
+.link:focus,
+.blue {
+    color: getColor(blue);
+}
+
+.btn {
+    color: getColor(white);
+    background-color: getColor(blue);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 32px;
+    transition: color 250ms $cubic,
+    	background-color 250ms $cubic;
+}
+.btn:hover,
+.btn:focus {
+    color: getColor(blue);
+    background-color: getColor(white);
+}
+
+.section {
+    padding: 94px 0;
+
+	&-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.7;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}

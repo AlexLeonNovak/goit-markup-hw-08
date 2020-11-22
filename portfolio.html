@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container flexbox">
+        <a href="index.html" class="link logo-link">
+            <span class="logo"><span class="blue">Web</span>Studio</span>
+        </a>
+        <nav class="nav">
+            <ul class="list menu">
+                <li class="menu-item">
+                    <a class="link menu-item-link" href="index.html">
+                        Студия
+                    </a>
+                </li>
+                <li class="menu-item active">
+                    <a class="link menu-item-link" href="portfolio.html">
+                        Портфолио
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="link menu-item-link" href="#contacts">
+                        Контакты
+                    </a>
+                </li>
+            </ul> <!-- End nav menu -->
+        </nav>
+        <ul class="list contacts">
+            <li class="contacts-item">
+                <a class="link contacts-item-link"
+                   href="mailto:info@devstudio.com"
+                >
+                    <svg class="contact-icon">
+                        <use href="./images/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="contacts-item">
+                <a class="link contacts-item-link"
+                   href="tel:+380961111111"
+                >
+                    <svg class="contact-icon">
+                        <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 115
+                </a>
+            </li>
+        </ul> <!-- End nav contacts -->
+    </div>
+</header>
+
+<main class="content">
+    <section class="section gallery">
+        <div class="container">
+            <h1 class="hidden">Gallery</h1>
+            <ul class="list flexbox categories-nav">
+                <li class="category-nav-item">
+                    <button type="button"
+                            class="btn category-nav-btn">
+                        Все
+                    </button>
+                </li>
+                <li class="category-nav-item">
+                    <button type="button"
+                            class="btn category-nav-btn">
+                        Веб-сайты
+                    </button>
+                </li>
+                <li class="category-nav-item">
+                    <button type="button"
+                            class="btn category-nav-btn">
+                        Приложения
+                    </button>
+                </li>
+                <li class="category-nav-item">
+                    <button type="button"
+                            class="btn category-nav-btn">
+                        Дизайн
+                    </button>
+                </li>
+                <li class="category-nav-item">
+                    <button type="button"
+                            class="btn category-nav-btn">
+                        Маркетинг
+                    </button>
+                </li>
+            </ul>
+            <ul class="list grid category-list">
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-1.jpg" alt="Category 1">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Технокряк</h2>
+                            <p class="card-category-name">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-2.jpg" alt="Category 2">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="card-category-name">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-3.jpg" alt="Category 3">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Ресторан Seafood</h2>
+                            <p class="card-category-name">Приложения</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-4.jpg" alt="Category 4">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Проект Prime</h2>
+                            <p class="card-category-name">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-5.jpg" alt="Category 5">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Проект Boxes</h2>
+                            <p class="card-category-name">Приложения</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-6.jpg" alt="Category 6">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Inspiration has no Borders</h2>
+                            <p class="card-category-name">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-7.jpg" alt="Category 7">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Издание Limited Edition</h2>
+                            <p class="card-category-name">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-8.jpg" alt="Category 8">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Проект LAB</h2>
+                            <p class="card-category-name">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="grid-item category-card">
+                    <a href="#" class="link">
+                        <div class="card-thumb">
+                            <img src="./images/category-9.jpg" alt="Category 9">
+                            <div class="overlay">
+                                <p class="category-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ad beatae consectetur consequuntur, dolore illum ipsum iusto labore,
+                                    laboriosam magnam natus nulla numquam quae quisquam similique sint sunt tempore.
+                                    Eos, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                                    blanditiis deleniti ducimus eaque id illum in ipsum maiores quis quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="category-card-content">
+                            <h2 class="card-title">Growing Business</h2>
+                            <p class="card-category-name">Приложения</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="list footer-blocks">
+            <li class="footer-block-item">
+                <a href="index.html" class="link logo-link">
+                    <span class="logo"><span class="blue">Web</span>Studio</span>
+                </a>
+                <address class="contacts-info" id="contacts">
+                    <p class="contact-info-address">
+                        <a class="link" target="_blank" href="https://goo.gl/maps/kAQHQV87yM3aP56k6">г. Киев, пр-т Леси
+                            Украинки, 26</a></p>
+                    <ul class="list contacts">
+                        <li class="contacts-item">
+                            <a class="link contacts-item-link"
+                               href="mailto:info@devstudio.com"
+                            >
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="link contacts-item-link"
+                               href="tel:+380961111111"
+                            >
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </li>
+            <li class="footer-block-item">
+                <h2 class="footer-social-title">Присоединяйтесь</h2>
+                <ul class="list socials">
+                    <li class="social-item">
+                        <a class="link social-link"
+                           href="https://www.instagram.com/"
+                           target="_blank">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link social-link"
+                           href="https://twitter.com/"
+                           target="_blank">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link social-link"
+                           href="https://www.facebook.com/"
+                           target="_blank">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link social-link"
+                           href="http://linkedin.com/"
+                           target="_blank">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer-block-item">
+                <h2 class="footer-social-title">Подпишитесь на рассылку</h2>
+                <form class="subscribe-form flexbox">
+                    <input type="email"
+                           name="email"
+                           placeholder="E-mail"
+                           class="input"
+                    >
+                    <button type="submit" class="btn flexbox subscribe-btn">
+                        <span class="btn-label">Подписаться</span>
+                        <svg class="btn-icon">
+                            <use href="./images/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="./js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.gains {
+  padding-bottom: 0;
+}
+.gain {
+  &-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &-description {
+    line-height: 1.71;
+    letter-spacing: .03em;
+  }
+  &-item {
+    width: calc(100% / 4 - 30px);
+  }
+  &-icon-thumb{
+    display: flex;
+    margin-right: 10px;
+    height: 120px;
+    background-color: getColor(light-grey);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &-icon{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+}
