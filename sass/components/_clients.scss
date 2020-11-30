@@ -1,5 +1,5 @@
 .client-item{
-  width: calc(100% / 6 - 30px);
+  width: calc(100% / 2 - 30px);
 
   &-link {
     border: 1px solid getColor(light-grey-icons);
@@ -13,6 +13,14 @@
       border-color: getColor(blue);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
+  }
+
 }
 
 .client-icon {

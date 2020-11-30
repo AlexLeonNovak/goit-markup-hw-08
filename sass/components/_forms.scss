@@ -8,8 +8,20 @@
   line-height: 11.25;
   letter-spacing: 0.03em;
 }
+
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    flex-direction: column;
+
+    & .input {
+      width: 100%;
+      max-width: 450px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .subscribe-form .input {
-  width: 360px;
   height: 50px;
   padding: 15px 16px;
   background-color: transparent;
@@ -22,6 +34,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 360px;
+  }
 }
 .subscribe-btn {
   padding: 13px 28px;
@@ -110,10 +126,10 @@
   }
 }
 .field-agree {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 40px;
+  margin-top: 10px;
+  display: block;
 }
 .field-checkbox {
   position: absolute;
@@ -138,13 +154,19 @@
   border: 2px solid getColor(black);
   border-radius: 2px;
   margin-right: 8px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 .field-agree .field-label {
   margin: 0;
-  font-size: 14px;
+  //font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .link-agree {
   color: getColor(blue);

@@ -10,21 +10,29 @@
   background-size: cover;
 
   &-content{
-    width: 700px;
     text-align: center;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+      width: 700px;
+    }
   }
 
   &-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     color: getColor(white);
 
     text-align: center;
     letter-spacing: .06em;
     text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &-btn {

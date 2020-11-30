@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <title>Homework 1</title>
+    <title>WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
           rel="stylesheet"
     >
@@ -15,6 +16,18 @@
         <a href="index.html" class="link logo-link">
             <span class="logo"><span class="blue">Web</span>Studio</span>
         </a>
+        <button class="menu-button"
+                aria-controls="main-menu"
+                aria-label="Menu toggle"
+                aria-expanded="false"
+                data-menu-btn
+        >
+            <svg class="button-icons" width="40" height="40">
+                <use class="icon-menu-close" href="./images/sprite.svg#menu-close"></use>
+                <use class="icon-menu-burger" href="./images/sprite.svg#menu-burger"></use>
+            </svg>
+        </button>
+        <div class="main-menu" id="main-menu" data-menu-content>
         <nav class="nav">
             <ul class="list menu">
                 <li class="menu-item active">
@@ -56,6 +69,7 @@
                 </a>
             </li>
         </ul> <!-- End nav contacts -->
+        </div>
     </div>
 </header>
 
@@ -577,5 +591,6 @@
 
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
